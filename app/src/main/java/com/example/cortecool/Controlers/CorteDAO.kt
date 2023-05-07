@@ -19,8 +19,8 @@ class CorteDAO (contexto: Context)
         var db: SQLiteDatabase = helper.writableDatabase
 
         var cadena = "insert into registro values(" + obj.dni_usuario + ",'" + obj.nombres_usuario +
-                                                    "','" + obj.apellidos_usuario + "','" + obj.sexo_usuario + "','" + obj.direccion_usuariou +
-                                                    "'," + obj.celular_usuario + "," + obj.eli_usuario + ");"
+                "','" + obj.apellidos_usuario + "','" + obj.sexo_usuario + "','" + obj.direccion_usuariou +
+                "'," + obj.celular_usuario + "," + obj.eli_usuario + ");"
 
         db.execSQL(cadena)
 
@@ -52,37 +52,37 @@ class CorteDAO (contexto: Context)
 
     //fun GrabarConfirmacion
 
-//    fun ConsultaLogin(obj: )
+    //    fun ConsultaLogin(obj: )
 //    {
 //        var cadena = "SELECT dni_usuario, password_usuario FROM registro"
 //    }
-fun BotonListarP():ArrayList<Vista>
-{
-    var lista = ArrayList<Vista>()
-    //Abrimos la bd en modo lectura
-    var db:SQLiteDatabase = helper.readableDatabase
-    //Cursor que manejara las filas devueltas por el select
-    //select * from platos where eli_platos = 0;
-    var consulta = "SELECT nombres_usuario, direccion_usuariou, celular_usuario FROM registro;"
-    var c: Cursor = db.rawQuery(consulta, null)
-    //Si el cursor tiene filas
-    if (c.count > 0)
+    fun BotonListarP():ArrayList<Vista>
     {
-        //Leemos el cursor
-        while (c.moveToNext())
+        var lista = ArrayList<Vista>()
+        //Abrimos la bd en modo lectura
+        var db:SQLiteDatabase = helper.readableDatabase
+        //Cursor que manejara las filas devueltas por el select
+        //select * from platos where eli_platos = 0;
+        var consulta = "SELECT nombres_usuario, apellidos_usuario, dni_usuario, direccion_usuariou, celular_usuario FROM registro;" //Modificamos la consulta para nuestro propósito
+        var c: Cursor = db.rawQuery(consulta, null)
+        //Si el cursor tiene filas
+        if (c.count > 0)
         {
-            //Agregamos los datos al arraylist string
-            var obj = Vista(c.getString(0), c.getString(1), c.getInt(2))
-
-            // agregamos los datos al arraylist
-            lista.add(obj)
+            //Leemos el cursor
+            while (c.moveToNext())
+            {
+                //Agregamos los datos al arraylist string
+                var obj = Vista(c.getString(0), c.getString(1), c.getInt(2), c.getString(3), c.getInt(4)) //Agregar los valores exactamente como la consulta respetando
+                // los tipos de datos que hemos declarado
+                // agregamos los datos al arraylist
+                lista.add(obj)
+            }
         }
+        //Cerramos el cursor y la bd
+        c.close()
+        db.close()
+        //Devolvemos el arrayList string
+        return lista
     }
-    //Cerramos el cursor y la bd
-    c.close()
-    db.close()
-    //Devolvemos el arrayList string
-    return lista
 }
 
-}

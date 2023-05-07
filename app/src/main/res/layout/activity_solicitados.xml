@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SolicitadosActivity">
-
+    tools:context=".SolicitadosActivity"> <!-- esto es la "Actividad asociada" sobre el diseño.-->
+    <!--LinearLayout añadir en forma de pila las vistas que vamos añadiendo de forma vertical o horizontal-->
 
     <ListView
         android:id="@+id/lvcorte"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp" />
+        android:layout_marginRight="10sp"
+        android:background="#E2943A"/>  <!--color-->
+    <!--el ancho ocupa todo en layout_width-->
 </LinearLayout>

@@ -33,13 +33,14 @@ class RegistroActivity : AppCompatActivity()
         }
         var crud= CorteDAO(this)
         var nomb = EDTNOMBRES.text.toString()
-        var obj = Usuario(  EDTDNI.text.toString().toInt(),
-                            EDTNOMBRES.text.toString(),
-                            EDTAPELLIDOS.text.toString(),
-                            sexo,
-                            EDTDIRECPRI.text.toString(),
-                            EDTCELULAR.text.toString().toInt(),
-                            0)
+
+        var obj = Usuario(  EDTDNI.text.toString().toInt(), //DNI ES UNICO DEBE HABER VALIDACIONES.
+            EDTNOMBRES.text.toString(),
+            EDTAPELLIDOS.text.toString(),
+            sexo,
+            EDTDIRECPRI.text.toString(),
+            EDTCELULAR.text.toString().toInt(),
+            0)
 
         crud.GrabarRegistro(obj)
         Toast.makeText(this, "Usuario ${nomb} registrado correctamente", Toast.LENGTH_LONG).show()

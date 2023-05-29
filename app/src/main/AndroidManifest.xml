@@ -18,7 +18,7 @@
         <activity android:name=".ContactanosActivity" />
         <activity android:name=".SolicitadosActivity" >
 
-    </activity>
+        </activity>
         <activity android:name=".DomicilioActivity" >
 
         </activity>

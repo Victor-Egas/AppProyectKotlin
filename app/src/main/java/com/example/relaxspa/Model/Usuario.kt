@@ -1,4 +1,4 @@
-package com.example.cortecool.Model
+package com.example.relaxspa.Model
 
 data class Usuario(var dni_usuario: Int, var nombres_usuario:String, var apellidos_usuario: String,
                    var sexo_usuario: String, var direccion_usuariou: String, var celular_usuario:Int, var  eli_usuario:Int)

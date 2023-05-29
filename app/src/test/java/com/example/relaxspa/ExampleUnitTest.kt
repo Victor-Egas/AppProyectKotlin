@@ -1,4 +1,4 @@
-package com.example.cortecool
+package com.example.relaxspa
 
 import org.junit.Test
 

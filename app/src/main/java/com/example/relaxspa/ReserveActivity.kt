@@ -1,18 +1,14 @@
-package com.example.cortecool
+package com.example.relaxspa
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
-import android.app.TimePickerDialog.OnTimeSetListener
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.DatePicker
 import android.widget.Toast
-import com.example.cortecool.Controlers.CorteDAO
-import com.example.cortecool.Model.Domicilio
-import com.example.cortecool.Model.Reserva
-import kotlinx.android.synthetic.main.activity_domicilio.*
+import com.example.relaxspa.Controlers.MasajeDAO
+import com.example.relaxspa.Model.Reserva
 import kotlinx.android.synthetic.main.activity_reserve.*
 //import kotlinx.android.synthetic.main.activity_reserve.BTNHORA
 //import kotlinx.android.synthetic.main.activity_reserve.EDTHORA
@@ -76,7 +72,7 @@ class ReserveActivity : AppCompatActivity() {
             corte = "Moderno"
         }
 
-        var crud= CorteDAO(this)
+        var crud= MasajeDAO(this)
         var objr = Reserva(corte,
                 EDTFECHAR.text.toString(),
                 EDTHORAR.text.toString())

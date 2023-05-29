@@ -1,14 +1,14 @@
-package com.example.cortecool.Adaptadores
+package com.example.relaxspa.Adaptadores
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import com.example.cortecool.Model.Vista
+import com.example.relaxspa.Model.Vista
 import kotlinx.android.synthetic.main.item.view.*
 
-class CorteAdaptador(context: Context , resource:Int, objects:ArrayList<Vista>)
+class MasajeAdaptador(context: Context, resource:Int, objects:ArrayList<Vista>)
     : ArrayAdapter<Vista>(context, resource, objects)
 {
     //    Definir variables globales para el Item.xml o el Solicitados Activity

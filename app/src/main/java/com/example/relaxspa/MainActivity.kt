@@ -1,4 +1,4 @@
-package com.example.cortecool
+package com.example.relaxspa
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.example.cortecool
+package com.example.relaxspa
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +14,7 @@ class ServicatalogoActivity : AppCompatActivity() {
     //Boton Cortes
     fun BotonCortes (s: View)
     {
-        var q = Intent(this, CatalocortesActivity::class.java)
+        var q = Intent(this, CatalomasajesActivity::class.java)
         startActivity(q)
     }
 

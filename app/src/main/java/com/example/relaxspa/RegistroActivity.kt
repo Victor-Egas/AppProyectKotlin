@@ -1,4 +1,4 @@
-package com.example.cortecool
+package com.example.relaxspa
 
 import android.content.DialogInterface
 import android.content.Intent
@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.example.cortecool.Controlers.CorteDAO
-import com.example.cortecool.Model.Usuario
+import com.example.relaxspa.Controlers.MasajeDAO
+import com.example.relaxspa.Model.Usuario
 import kotlinx.android.synthetic.main.activity_registro.*
 
 
@@ -31,7 +31,7 @@ class RegistroActivity : AppCompatActivity()
         {
             sexo = "Masculino"
         }
-        var crud= CorteDAO(this)
+        var crud= MasajeDAO(this)
         var nomb = EDTNOMBRES.text.toString()
 
         var obj = Usuario(  EDTDNI.text.toString().toInt(), //DNI ES UNICO DEBE HABER VALIDACIONES.

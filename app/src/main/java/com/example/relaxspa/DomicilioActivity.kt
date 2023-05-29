@@ -1,4 +1,4 @@
-package com.example.cortecool
+package com.example.relaxspa
 
 import android.app.TimePickerDialog
 import android.content.Intent
@@ -6,10 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.example.cortecool.Controlers.CorteDAO
-import com.example.cortecool.Model.Domicilio
+import com.example.relaxspa.Controlers.MasajeDAO
+import com.example.relaxspa.Model.Domicilio
 import kotlinx.android.synthetic.main.activity_domicilio.*
-import kotlinx.android.synthetic.main.activity_reserve.*
 //import kotlinx.android.synthetic.main.activity_reserve.BTNHORA
 //import kotlinx.android.synthetic.main.activity_reserve.EDTHORA
 import java.util.*
@@ -86,7 +85,7 @@ class DomicilioActivity : AppCompatActivity()
             corte = "Moderno"
         }
 
-        var crud= CorteDAO(this)
+        var crud= MasajeDAO(this)
         var obj = Domicilio(corte,
                 TVFECHA.text.toString(),
                 EDTHORA.text.toString())

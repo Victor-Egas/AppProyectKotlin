@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cortecool">
+    package="com.example.relaxspa">
 
     <application
         android:allowBackup="true"
@@ -9,32 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".CatalocortesActivity">
+        <activity android:name="com.example.relaxspa.CatalomasajesActivity">
 
         </activity>
-        <activity android:name=".ServicatalogoActivity" >
+        <activity android:name="com.example.relaxspa.ServicatalogoActivity" >
 
         </activity>
-        <activity android:name=".ContactanosActivity" />
-        <activity android:name=".SolicitadosActivity" >
+        <activity android:name="com.example.relaxspa.ContactanosActivity" />
+        <activity android:name="com.example.relaxspa.SolicitadosActivity" >
 
         </activity>
-        <activity android:name=".DomicilioActivity" >
+        <activity android:name="com.example.relaxspa.DomicilioActivity" >
 
         </activity>
-        <activity android:name=".ReserveActivity" >
+        <activity android:name="com.example.relaxspa.ReserveActivity" >
 
         </activity>
-        <activity android:name=".ServiciosActivity">
+        <activity android:name="com.example.relaxspa.ServiciosActivity">
 
         </activity>
-        <activity android:name=".RegistroActivity" >
+        <activity android:name="com.example.relaxspa.RegistroActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.example.relaxspa.MainActivity" />
     </application>
 
 </manifest>

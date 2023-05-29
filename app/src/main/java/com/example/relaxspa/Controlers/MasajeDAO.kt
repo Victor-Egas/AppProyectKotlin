@@ -1,15 +1,15 @@
-package com.example.cortecool.Controlers
+package com.example.relaxspa.Controlers
 
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
-import com.example.cortecool.Model.Domicilio
-import com.example.cortecool.Model.Reserva
+import com.example.relaxspa.Model.Domicilio
+import com.example.relaxspa.Model.Reserva
 //import com.example.cortecool.Model.Login
-import com.example.cortecool.Model.Usuario
-import com.example.cortecool.Model.Vista
+import com.example.relaxspa.Model.Usuario
+import com.example.relaxspa.Model.Vista
 
-class CorteDAO (contexto: Context)
+class MasajeDAO (contexto: Context)
 {
     var helper = DataBaseHelper (contexto)
     var mi_contexto = contexto

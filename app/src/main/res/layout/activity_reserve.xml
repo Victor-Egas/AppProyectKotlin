@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10sp"
         android:layout_marginRight="10sp"
-        android:text="Servicio de Cortes:"
+        android:text="Servicio de masajes:"
         android:textSize="18sp"
         android:textStyle="bold"
         android:translationY="80sp" />
@@ -47,7 +47,7 @@
                 android:textColor="#E2943A"
                 android:layout_marginLeft="10sp"
                 android:layout_marginRight="200sp"
-                android:text="Normal"
+                android:text="Masaje de Pareja"
                 android:textSize="16sp" />
 
             <RadioButton
@@ -57,7 +57,7 @@
                 android:textColor="#E2943A"
                 android:layout_marginLeft="10sp"
                 android:layout_marginRight="200sp"
-                android:text="Escolar"
+                android:text="Descontracturante"
                 android:textSize="16sp" />
 
             <RadioButton
@@ -67,7 +67,7 @@
                 android:textColor="#E2943A"
                 android:layout_marginLeft="10sp"
                 android:layout_marginRight="200sp"
-                android:text="Militar"
+                android:text="Masaje Relajante"
                 android:textSize="16sp" />
 
             <RadioButton
@@ -77,7 +77,7 @@
                 android:textColor="#E2943A"
                 android:layout_marginLeft="10sp"
                 android:layout_marginRight="200sp"
-                android:text="Moderno"
+                android:text="Terapeutico"
                 android:textSize="16sp" />
         </RadioGroup>
     </LinearLayout>
